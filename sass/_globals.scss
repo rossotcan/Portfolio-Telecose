@@ -1,0 +1,25 @@
+@use "../sass/components";
+//color: components.$color-main;
+body{
+   // background-color: #EACBD2 !important;
+}
+.home{
+    @include components.sections();
+}
+.kindWorks{
+    min-height: 15rem;
+    background-color: components.$color-main-dark;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+.whoami{
+    @include components.sections();
+    
+}
+.works{
+
+}
+.contact{
+
+}

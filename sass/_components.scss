@@ -1,0 +1,136 @@
+$color-bg: #EACBD2;
+$color-main-clear: #DFAEB4;
+$color-secondary-clear: #B98EA7;
+$color-main-dark: #302F4D;
+$color-secondary-dark: #120D31;
+
+@mixin sections{
+    margin: 5rem 0 3rem 0;
+    padding: 5rem 0;
+}
+
+@mixin btn {
+    background-color: $color-secondary-clear;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    padding: .5rem 1.2rem;
+    font-weight: 600;
+    &:hover{
+        color: $color-bg;
+        border: none;
+        text-decoration: none;
+        box-shadow: 0px 0px 1.5px $color-main-dark;
+    }
+}
+
+/*
+@extend .btn-main;
+@include btn-sm-modify();
+
+&:hover
+
+*/
+
+.header{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+    height: 4rem;
+
+    .logo{
+        padding: 1rem;
+        margin: 0;
+        a{
+            font-family: 'Dancing Script', cursive;
+            color: $color-main-dark;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-decoration: none;
+            &:hover{
+                color: $color-main-dark;
+            }
+        }
+    }
+
+    .menu{
+        .main-menu{
+            display: flex;
+            padding: 1rem;
+            margin: 0;
+            gap: 3rem;
+            li{
+                list-style: none;
+                a{
+                    color: $color-main-dark;
+                    text-decoration: none;
+                }
+                .contactar{
+                    @include btn();
+                }
+            }
+        }
+    }
+    
+}
+
+//La feature del home
+.feature{
+    margin: 3rem 0rem;
+    max-width: 50%;
+    .title{
+        font-size: 2.5rem;
+    }
+    .description{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+    .cta{
+        margin: 1rem 0 2rem 0;
+        font-size: 1rem;
+    }
+    .home__works {
+        @include btn();
+        color: $color-main-dark;
+    }
+}
+//trabajos que realiza, icono + texto
+.feature_work{
+    padding: 2rem;
+    max-width: 20rem;
+    //text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .icon{
+        display: flex;
+        justify-content: center;    
+        font-size: 8rem;
+        color: $color-main-clear;
+    }
+    .description{
+        .title{
+            color: white;
+        }
+        .text{
+            color: $color-secondary-clear;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+    }
+}
+//quien soy
+
+//mis trabajos en grid, ordenados como tabla en mejores de nancys, de muñeco tal...etc
+
+//contactar. número de whatsapp, enlace de facebook y dónde puedes encontrarme próximamente?
+
+//botón subir arriba si es que la barra de navegación no puedo fijarla
+
+
+
+
+
+
