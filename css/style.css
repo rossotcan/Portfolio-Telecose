@@ -89,6 +89,7 @@
 .feature_work {
   padding: 2rem;
   max-width: 20rem;
+  width: 50%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -108,12 +109,17 @@
   font-size: 1rem;
 }
 
+body {
+  background-color: #EACBD2 !important;
+}
+
 .home {
-  margin: 5rem 0 3rem 0;
+  margin: 5rem 0;
   padding: 5rem 0;
 }
 
 .kindWorks {
+  margin: 5rem 0;
   min-height: 15rem;
   background-color: #302F4D;
   display: flex;
@@ -122,8 +128,19 @@
 }
 
 .whoami {
-  margin: 5rem 0 3rem 0;
+  margin: 10rem 0;
   padding: 5rem 0;
+  min-height: 20rem;
+  display: flex;
+  align-items: center;
+}
+.whoami .feature {
+  width: 50%;
+}
+.whoami .imagen img {
+  max-width: 30rem;
+  display: flex;
+  margin: 0 0 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
